@@ -1,23 +1,25 @@
 import React from "react";
+import "./Sidebar.css";
 
 const sidebar = () => {
   return (
     <div className="Sidebar">
+      <h1>Cassie Brown</h1>
       <ul>
         <li>
-          <button>Home</button>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <button>About</button>
+          <a href="#about">About</a>
         </li>
         <li>
-          <button>Resume</button>
+          <a href="#resume">Resume</a>
         </li>
         <li>
-          <button>Recipes</button>
+          <a href="#recipes">Recipes</a>
         </li>
         <li>
-          <button>Contact</button>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>

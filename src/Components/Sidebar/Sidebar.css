@@ -1,4 +1,22 @@
 .Sidebar {
-  display: flex;
-  justify-content: left;
+  white-space: nowrap;
+  background-color: #37474f;
+}
+
+.Sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: red;
+  text-decoration: none;
+}
+
+.Sidebar ul li a.current {
+  background: black;
+  color: green;
 }
