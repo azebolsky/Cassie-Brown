@@ -1,29 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.css";
 
-const sidebar = () => {
+const Sidebar = () => {
+  const [active, setActive] = useState({
+    home: true,
+    about: false,
+    resume: false,
+    recipes: false,
+    contact: false,
+  });
+
+  // useEffect(() => {});
+
   return (
     <div className="Sidebar">
-      <h1>Cassie Brown</h1>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a
+            href="#home"
+            className={active.home ? "active" : ""}
+            onClick={() => setActive({ home: true })}
+          >
+            Home
+          </a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a
+            href="#about"
+            className={active.about ? "active" : ""}
+            onClick={() => setActive({ about: true })}
+          >
+            About
+          </a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a
+            href="#resume"
+            className={active.resume ? "active" : ""}
+            onClick={() => setActive({ resume: true })}
+          >
+            Resume
+          </a>
         </li>
         <li>
-          <a href="#recipes">Recipes</a>
+          <a
+            href="#recipes"
+            className={active.recipes ? "active" : ""}
+            onClick={() => setActive({ recipes: true })}
+          >
+            Recipes
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a
+            href="#contact"
+            className={active.contact ? "active" : ""}
+            onClick={() => setActive({ contact: true })}
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </div>
   );
 };
 
-export default sidebar;
+export default Sidebar;

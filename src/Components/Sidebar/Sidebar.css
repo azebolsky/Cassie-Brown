@@ -1,12 +1,22 @@
 .Sidebar {
   white-space: nowrap;
   background-color: #37474f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .Sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-height: 300px) {
+  .Sidebar ul {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .Sidebar ul li a {
@@ -16,7 +26,15 @@
   text-decoration: none;
 }
 
-.Sidebar ul li a.current {
+.active {
   background: black;
   color: green;
+}
+
+#home,
+#about,
+#resume,
+#recipes,
+#contact {
+  margin-bottom: 40rem;
 }
