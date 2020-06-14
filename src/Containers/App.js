@@ -8,15 +8,20 @@ import Contact from "../Components/contact/Contact";
 import "./App.css";
 
 function App() {
+  const handleButtonClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="App">
       <Sidebar />
       <main>
-        <Home />
-        <About />
-        <Resume />
-        <Recipes />
-        <Contact />
+        <Home title="home" dark={true} id="home" />
+        <About title="about" dark={true} id="about" />
+        <Resume title="resume" dark={true} id="resume" />
+        <Recipes title="recipes" dark={true} id="recipes" />
+        <Contact title="contact" dark={true} id="contact" />
+        <button onClick={handleButtonClick}>back to the top</button>
       </main>
     </div>
   );

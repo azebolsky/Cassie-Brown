@@ -1,64 +1,70 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const [active, setActive] = useState({
-    home: true,
-    about: false,
-    resume: false,
-    recipes: false,
-    contact: false,
-  });
-
-  // useEffect(() => {});
-
   return (
     <div className="Sidebar">
       <ul>
         <li>
-          <a
-            href="#home"
-            className={active.home ? "active" : ""}
-            onClick={() => setActive({ home: true })}
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#about"
-            className={active.about ? "active" : ""}
-            onClick={() => setActive({ about: true })}
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#resume"
-            className={active.resume ? "active" : ""}
-            onClick={() => setActive({ resume: true })}
+          <Link
+            activeClass="active"
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Resume
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#recipes"
-            className={active.recipes ? "active" : ""}
-            onClick={() => setActive({ recipes: true })}
+          <Link
+            activeClass="active"
+            to="recipes"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Recipes
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#contact"
-            className={active.contact ? "active" : ""}
-            onClick={() => setActive({ contact: true })}
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
