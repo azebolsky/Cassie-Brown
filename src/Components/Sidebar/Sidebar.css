@@ -1,18 +1,25 @@
 .Sidebar {
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap;
-  background-color: #37474f;
+  background-color: lavender;
   text-align: center;
+  display: block;
+  width: 300px;
+  font-size: 30px;
   display: flex;
   flex-direction: column;
-  width: 300px;
+}
+
+.Sidebar > h1 {
+  font-size: 40px;
+  letter-spacing: 0.3em;
+  color: rgb(167, 100, 100);
 }
 
 .Sidebar ul {
   list-style: none;
   margin: 0;
-  padding: 0;
 }
-
 @media (min-width: 300px) {
   .Sidebar ul {
     position: sticky;
@@ -20,17 +27,16 @@
   }
 }
 
-.Sidebar ul li a {
-  display: block;
-  padding: 0.5rem 0;
-  color: red;
+.Sidebar ul li {
+  color: purple;
   text-decoration: none;
+  cursor: pointer;
+  padding: 10px 10px;
 }
 
-li > .active {
-  color: green;
-  border-left: 2px solid white;
-  background-color: black;
+ul > li > a.active {
+  color: rgb(228, 193, 193);
+  border-left: 2px solid rgb(228, 193, 193);
 }
 
 #home,
