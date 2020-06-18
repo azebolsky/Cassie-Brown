@@ -3,6 +3,7 @@
   background-color: lavender;
   width: 300px;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .Sidebar > h1 {
@@ -21,10 +22,10 @@ h1 {
   border-radius: 50%;
   transition: 0.3s;
   margin: 35px 0 30px 0;
-  padding: 1px;
-  border: 2px solid slateblue;
-  background-color: rgb(255, 134, 134);
-  /* background-color: lightgrey; */
+  padding: 2px;
+  border: 2px solid rgb(51, 54, 146);
+  /* background-color: rgb(255, 134, 134); */
+  background-color: lightpink;
 }
 
 .Sidebar img:hover {
