@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="Sidebar">
       <ul>
-        <h1>Cassie</h1>
+        {/* <h1>Cassie</h1> */}
         <img src="https://i.imgur.com/QwpDS0N.png" alt="Cassie Brown" />
         <li>
           <Link
