@@ -6,12 +6,6 @@
   font-weight: 700;
 }
 
-.Sidebar > h1 {
-  font-size: 40px;
-  letter-spacing: 0.3em;
-  color: rgb(167, 100, 100);
-}
-
 h1 {
   margin: 25px 0;
 }
@@ -56,6 +50,7 @@ ul {
   text-decoration: none;
   cursor: pointer;
   padding: 10px 10px;
+  margin: 10px;
 }
 
 .Sidebar ul li a {
