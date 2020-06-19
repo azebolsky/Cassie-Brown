@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import "semantic-ui-css/semantic.min.css";
 
 const contact = () => {
   return (

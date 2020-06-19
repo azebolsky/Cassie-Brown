@@ -4,14 +4,17 @@ import "./Home.css";
 const home = () => {
   return (
     <section id="home">
-      <h1>
-        Cassie Brown <br></br>MS RD LD
-      </h1>
-
-      <h3>
-        <img src="https://i.imgur.com/bofb7de.png" width="30px" height="30px" />{" "}
+      <h1>Cassie Brown</h1>
+      <h3>MS RD LD</h3>
+      <h4>
+        <img
+          src="https://i.imgur.com/bofb7de.png"
+          alt="cactus icon"
+          width="30px"
+          height="30px"
+        />{" "}
         Dallas, TX
-      </h3>
+      </h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
         assumenda aliquid ipsam commodi, vitae libero pariatur dolor aspernatur
@@ -19,11 +22,19 @@ const home = () => {
         tempore consequatur. Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Aliquid deserunt beatae ea. Neque unde soluta voluptatem nostrum
         eaque, delectus similique amet facilis repudiandae alias quasi modi!
-        Maxime aliquid animi excepturi. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Perferendis cum sequi sint consequatur est atque
-        explicabo, ex deleniti aliquid ipsum vero tempore recusandae aperiam
-        harum. Asperiores officiis debitis hic cupiditate.
+        Maxime aliquid animi excepturi.
       </p>
+      <div className="picture-block">
+        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/Box2HZp.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/LnmLlbT.jpg" alt="cassie & coffee" />
+        <img src="https://i.imgur.com/uBPLK6e.jpg" alt="cassie & coffee" />
+      </div>
     </section>
   );
 };
