@@ -40,7 +40,7 @@ const Contact = () => {
     axios
       .post("API_URI", data)
       .then((res) => {
-        setContent({ sent: true }, resetForm);
+        setContent({ sent: true }, resetForm());
       })
       .catch((error) => {
         console.log("message not sent");

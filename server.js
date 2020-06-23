@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
 
-const port = 3001;
+const port = 4444;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +25,7 @@ app.post("/api/v1", (req, res) => {
 
   var smtpTransport = nodemailer.createTransport({
     service: "Gmail",
-    port: 3001,
+    port: 465,
     auth: {
       user: "zebolsky.adam@gmail.com",
       pass: "Fishpaste9(",
